@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+   
+<style type="text/css">
+        @import url("test.css");
+
+
+    </style>
+ 
+ 
+  </head>
+  <body>
+  <a th:href="@{/game/list}"> List</a>
+  <a th:href="@{/game/home}"> home</a>
+  <form action="#" th:action="@{/game/fooform}"  method="post">
+<input type="text"  placeholder="word" name = "word", class="form-control" /> 
+<input type="text"  placeholder="definition" name = "definition", class="form-control" /> 
+         <input type="submit" value="Create" />
+      <input type="reset" value="Reset" />
+      </form>
+      
+ 
+    
+</body>
+</html>

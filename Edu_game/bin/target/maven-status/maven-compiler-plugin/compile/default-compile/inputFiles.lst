@@ -1,0 +1,8 @@
+/home/student/workspace/Edu_game/src/main/java/com/example/Edu_game/configuration/WebMvcConfig.java
+/home/student/workspace/Edu_game/src/main/java/com/example/Edu_game/service/UserService.java
+/home/student/workspace/Edu_game/src/main/java/com/example/Edu_game/model/User.java
+/home/student/workspace/Edu_game/src/main/java/com/example/Edu_game/controler/LoginController.java
+/home/student/workspace/Edu_game/src/main/java/com/example/Edu_game/service/UserServiceImpl.java
+/home/student/workspace/Edu_game/src/main/java/com/example/Edu_game/configuration/SecurityConfiguration.java
+/home/student/workspace/Edu_game/src/main/java/com/example/Edu_game/repository/UserRepository.java
+/home/student/workspace/Edu_game/src/main/java/com/example/Edu_game/EduGameApplication.java

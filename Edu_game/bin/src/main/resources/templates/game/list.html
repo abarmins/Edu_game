@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/numeric/1.2.6/numeric.min.js"></script>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+
+
+
+  </head>
+  <body >
+<a th:href="@{/game/NewList}">New List</a>
+<a th:href="@{/game/home}"> home</a>
+
+    <h2>List</h2>
+
+   
+ <form action="#" th:action="@{/game/check}" th:object="${ansList}" method="post">
+    <fieldset>
+        <input type="submit" id="submitButton" th:value="Save">
+        <input type="reset" id="resetButton" name="reset" th:value="Reset"/>
+        <table>
+            <thead>
+                <tr>
+                    <th> Question</th>
+                    <th> Answer</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="ans, itemStat : *{answ}">
+                	<td><p   th:text="*{answ[__${itemStat.index}__].question}" /></td>
+                    <td><input hidden="true"  th:field="*{answ[__${itemStat.index}__].question}" /></td>
+                    <td><input th:field="*{answ[__${itemStat.index}__].answer}" /></td>
+                </tr>
+            </tbody>
+        </table>
+    </fieldset>
+</form>  
+   
+   
+   
+   
+   
+</body>   
+
+
+ 
+</html>
