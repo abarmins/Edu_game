@@ -5,4 +5,4 @@ Edu game is a service that allows users to create personal lists of words with c
 * Firefox browser
 
 ## Usage
-Go to url http://localhost:8080/
+Go to url http://[host computer IP]:8080/
